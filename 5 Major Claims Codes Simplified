@@ -40,9 +40,35 @@
         a:hover {
             text-decoration: underline;
         }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-buttons button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .nav-buttons button:hover {
+            background-color: #005bb5;
+        }
     </style>
 </head>
 <body>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <button onclick="location.href='#tinnitus'">Tinnitus</button>
+        <button onclick="location.href='#limitation-of-flexion-knee'">Limitation of Flexion (Knee)</button>
+        <button onclick="location.href='#hearing-loss'">Hearing Loss</button>
+        <button onclick="location.href='#ptsd'">PTSD</button>
+        <button onclick="location.href='#lumbosacral-cervical-strain'">Lumbosacral/Cervical Strain</button>
+    </div>
 
     <!-- Content Section: Tinnitus -->
     <section id="tinnitus">
@@ -125,9 +151,10 @@
             <strong>Instructions:</strong> For new claims, provide recent X-rays or MRI results. If appealing a prior decision, show how the condition has limited your movement or worsened in pain. For supplemental claims, highlight any new medical diagnoses or changes in your range of motion.
         </p>
         <p>
-            <strong>Documentation Needed:</strong> Medical records documenting the injury, range of motion tests, and any history of in-service injuries are required.
+            <strong>Documentation Needed:</strong> Medical records documenting the injury, range of motion tests, and any history of in-service injuries are important.
         </p>
     </section>
 
 </body>
 </html>
+
