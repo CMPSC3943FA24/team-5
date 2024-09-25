@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VAssist - Guidance on Intent to File Form for VA Disability Claims.">
+    <title>VAssist - Intent to File Disability Claim</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+
+        section {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        section h2 {
+            font-size: 2.2em;
+            color: #003366;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        section h3 {
+            font-size: 1.8em;
+            color: #00509E;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        section p {
+            font-size: 1.4em;
+            line-height: 1.8;
+            color: #333;
+            margin: 15px 0;
+        }
+
+        section p strong {
+            font-weight: bold;
+            color: #00509E;
+        }
+
+        section a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .small-text {
+            font-size: 0.9em; /* Slightly smaller text */
+        }
+
+        .centered-address {
+            font-size: 1em; /* Increased size for readability */
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        section a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        ul li {
+            font-size: 1.4em;
+            margin: 10px 0;
+        }
+
+        .centered-text {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            section {
+                padding: 15px;
+            }
+
+            section h2 {
+                font-size: 1.8em;
+            }
+
+            section p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section id="Local Resources">
+        <h2>Local resource centers to help with filing your claim</h2>
+        <p>
+            <strong>Vet centers in Oklahoma </strong> These centers are open Monday - Friday, 8am - 4:30 pm.
+        </p>
+        <p>
+            <strong>Oklahoma City</strong> Phone number: (405)456-5184 Address: N Robinson Avenue Oklahoma City, OK 73116
+        </p>
+        <p>
+            <strong>Lawton</strong> Phone number: (580)585-5880 Address: 10 Southwest 2nd Street, Lawton, OK 73501
+        </p>
+        <p>
+            <strong>Tulsa</strong> Phone number: (918)237-4200 Address: 6130 East 81st Street, Tulsa, OK 74137
+        </p>
+        <p>
+            <strong>Veteran Benefit Hotline, open Monday - Friday available 8am - 9pm</strong> (800)827-1000
+        </p>
+
+        <h3>Other resources and information</h3>
+        <p>
+             People who can help with your VA benefit claims are VSO (Accredited Veterans Service Organization) representatives, accredited attorneys, and accredited claims agents. Services from a VSO representative are always free, but attorneys and claim agents may charge fees.
+        <p>
+            For a list of VSO officers in oklahoma, click the following link:
+            <a class="small-text" href=https://oklahoma.gov/veterans/veterans-services/find-a-service-officer.html</a>.
+        </p>
+
+        
+        <p>
+    </section>
+
+</body>
+</html>
