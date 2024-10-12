@@ -5,35 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VA Assist</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
 
+        header {
+            background-color: #004080;
+            padding: 20px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            padding: 20px;
+            margin: 40px auto;
+            max-width: 1200px;
+        }
+
+        .button {
+            background-color: #00509E;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            height: 100px;
+        }
+
+        .button:hover {
+            background-color: #003366;
+        }
+
+        @media screen and (max-width: 768px) {
+            .button-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .button-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
-    <a href="5 Major Claims Codes Simplified.html">Go to 5 Major Claims Page</a>
-    <br>
-    <a href="Documents Required.html">Go to Documents Required Page</a>
-    <br>
-    <a href="Filing Separate Claims for Multiple Disabilities.html">Go to Filing Separate Claims for Multiple Disabilities</a>
-    <br>
-    <a href="Intent to File Form.html">Go to Intent to File Form Page</a>
-    <br>
-    <a href="Filing VA Form 21-526EZ.html">Go to 5 Filing VA Form 21-526EZ</a>
-    <br>
-    <a href="Learn More About 38CFR Codes.html">Go to Learn more about 38CFR Codes Page</a>
-    <br>
-    <a href="Local Resources.html">Go to Local Resources Page</a>
-    <br>
-    <a href="File a Claim.html">Go to File a Claim</a>
-    <br>
-    <a href="BDD.html">Go to BDD</a>
-    <br>
-    <a href="How the 38 CFR Helps With Filing a Claim.html">Go to How the 38 CFR Helps With Filing a Claim</a>
-     <br>
-    <a href="Using 38CFR to Strengthen Your VA Appeal.html">Go to Using 38CFR to Strengthen Your VA Appeal</a>
-    <br>
-    <a href="Ways to turn in your disability application.html">Go to Ways to turn in your disability application</a>
-    <br>
-    <a href="Common Disability Claims and Ratings.html">Go to Common Disability Claims and Ratings</a>
-    <br>
-    <a href="Adding Secondary Diagnoses to Strengthen Your Appeal.html">Go to Adding Secondary Diagnoses to Strengthen Your Appeal</a>
+    <header>
+        <h1>VAssist</h1>
+        <h2>Helping veterans file claims with the VA!</h2>
+    </header>
+
+    <div class="button-grid">
+        <a class="button" href="How to File a Claim.html">How to File a Claim</a>
+        <a class="button" href="Filing VA Form 21-526EZ.html">Filing VA Form 21-526EZ</a>
+        <a class="button" href="5 Major Claims Codes Simplified.html">5 Major Claims Codes</a>
+        <a class="button" href="Documents Required.html">Documents Required</a>
+        <a class="button" href="Filing Separate Claims for Multiple Disabilities.html">Filing Separate Claims for Multiple Disabilities</a>
+        <a class="button" href="Intent to File Form.html">Intent to File Form</a>
+        <a class="button" href="Learn More About 38CFR Codes.html">Learn About 38CFR Codes</a>
+        <a class="button" href="Local Resources.html">Local Resources</a>
+        <a class="button" href="File a Claim.html">File a Claim</a>
+        <a class="button" href="BDD.html">Benefits Delivery at Discharge</a>
+        <a class="button" href="How the 38 CFR Helps With Filing a Claim.html">How the 38 CFR Helps</a>
+        <a class="button" href="Using 38CFR to Strengthen Your VA Appeal.html">Using 38CFR to Strengthen Your Appeal</a>
+        <a class="button" href="Ways to turn in your disability application.html">Ways to Turn in Your Application</a>
+        <a class="button" href="Common Disability Claims and Ratings.html">Common Disability Claims and Ratings</a>
+        <a class="button" href="Adding Secondary Diagnoses to Strengthen Your Appeal.html">Adding Secondary Diagnoses</a>
+    </div>
+
 </body>
+</html>
