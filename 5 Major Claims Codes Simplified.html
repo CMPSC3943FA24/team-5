@@ -8,14 +8,15 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #F4F4F9;
+            background-color: #000; /* Black background */
             margin: 0;
             padding: 0;
             font-size: 18px; /* Bigger font */
             line-height: 1.8; /* Increased line space */
+            color: #FFF; /* White text color */
         }
         section {
-            background-color: #F9F9F9;
+            background-color: #F4F4F9; /* Light gray background for sections */
             border: 1px solid #ddd;
             padding: 20px;
             max-width: 900px;
@@ -25,16 +26,16 @@
         }
         h2 {
             font-size: 2.2em; /* Larger heading */
-            color: #003366;
+            color: #003366; /* Dark blue color for headings */
             margin-bottom: 20px;
         }
         p {
             font-size: 1.4em; /* Larger text for paragraphs */
-            color: #333;
+            color: #000; /* Black text for paragraphs */
             line-height: 1.6;
         }
         a {
-            color: #0066cc;
+            color: #0066cc; /* Link color */
             text-decoration: none;
         }
         a:hover {
@@ -45,17 +46,19 @@
             margin-top: 20px;
         }
         .nav-buttons button {
-            background-color: #0066cc;
-            color: white;
+            background-color: #0066cc; /* Blue button color */
+            color: white; /* White text on buttons */
             border: none;
             padding: 10px 20px;
             margin: 5px;
             font-size: 1.2em;
             cursor: pointer;
             border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
         }
         .nav-buttons button:hover {
-            background-color: #005bb5;
+            background-color: white; /* Change button background to white on hover */
+            color: #0066cc; /* Change text color to blue on hover */
         }
     </style>
 </head>
@@ -157,4 +160,3 @@
 
 </body>
 </html>
-
