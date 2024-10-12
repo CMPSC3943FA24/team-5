@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #000000; /* Changed background to black */
             margin: 0;
             padding: 20px;
             text-align: center;
@@ -17,7 +17,7 @@
         .container {
             max-width: 600px;
             margin: 0 auto;
-            background-color: #fff;
+            background-color: #ffffff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -40,7 +40,8 @@
             margin-bottom: 20px;
         }
 
-        select, input {
+        select,
+        input {
             width: 100%;
             padding: 15px; /* Larger input field */
             margin: 15px 0;
@@ -68,34 +69,37 @@
             padding: 20px;
             background-color: #e0f7fa;
             border-radius: 8px;
-            font-size: 1.em; */
+            font-size: 1em;
         }
 
         .info-section {
             text-align: left;
             margin-bottom: 30px;
             padding: 20px;
-            background-color: #e0f7fa;
+            background-color: #d9edf7; /* Light blue background */
             border-radius: 8px;
         }
 
         .info-section h2 {
             font-size: 2.2em;
-        }
-
-        .info-section ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        .info-section li {
-            font-size: 1.5em;
-            margin-bottom: 10px;
+            color: #00509E; /* Darker blue for headings */
         }
 
         .info-section p {
             font-size: 1.4em;
             line-height: 1.6;
+            color: #333;
+            margin: 15px 0;
+        }
+
+        .info-section p strong {
+            font-weight: bold;
+            color: #004080; /* Emphasized text color */
+        }
+
+        .info-section div {
+            margin: 10px 0;
+            font-size: 1.5em;
         }
     </style>
 </head>
@@ -105,13 +109,21 @@
     <!-- Common Disability Claims Section -->
     <div class="info-section">
         <h2>Common Disability Claims and Ratings</h2>
-        <ul>
-            <li><strong>Tinnitus:</strong> Typically rated at 10% disability. Estimated monthly compensation: $171.23.</li>
-            <li><strong>Limitation of Flexion (Knee):</strong> Can be rated between 0% to 100% depending on severity.</li>
-            <li><strong>Hearing Loss:</strong> Compensation depends on severity, typically ranging from 0% to 100% disability.</li>
-            <li><strong>PTSD:</strong> Rated from 0% to 100%, based on the severity of symptoms.</li>
-            <li><strong>Lumbosacral/Cervical Strain:</strong> Ranges between 0% and 100% based on impact on daily activities.</li>
-        </ul>
+        <div>
+            <strong>Tinnitus:</strong> Typically rated at 10% disability. Estimated monthly compensation: $171.23.
+        </div>
+        <div>
+            <strong>Limitation of Flexion (Knee):</strong> Can be rated between 0% to 100% depending on severity.
+        </div>
+        <div>
+            <strong>Hearing Loss:</strong> Compensation depends on severity, typically ranging from 0% to 100% disability.
+        </div>
+        <div>
+            <strong>PTSD:</strong> Rated from 0% to 100%, based on the severity of symptoms.
+        </div>
+        <div>
+            <strong>Lumbosacral/Cervical Strain:</strong> Ranges between 0% and 100% based on impact on daily activities.
+        </div>
     </div>
 
     <!-- Calculator Section -->
