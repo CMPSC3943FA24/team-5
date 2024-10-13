@@ -46,7 +46,7 @@
             text-decoration: none;
             text-align: center;
             border-radius: 8px;
-            transition: background-color 0.3s;
+            transition: background-color 0.6s, color 0.6s, font-size 0.6s; /* Added font-size transition */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -55,7 +55,9 @@
         }
 
         .button:hover {
-            background-color: #003366;
+            background-color: white; /* Inverse to white */
+            color: #00509E; /* Inverse to button color */
+            font-size: 1.4em; /* Enlarge text on hover */
         }
 
         @media screen and (max-width: 768px) {
@@ -78,7 +80,6 @@
     </header>
 
     <div class="button-grid">
-        
         <a class="button" href="File a Claim.html">File a Claim</a>
         <a class="button" href="Filing VA Form 21-526EZ.html">Filing VA Form 21-526EZ</a>
         <a class="button" href="5 Major Claims Codes Simplified.html">5 Major Claims Codes</a>
