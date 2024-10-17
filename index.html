@@ -18,16 +18,19 @@
             background-color: #004080;
             padding: 20px;
             color: white;
+            position: relative;
         }
 
-        h1 {
-            font-size: 3em;
-            margin: 0;
+        header img {
+            width: 300px; /* Increased the size of the VAssist logo */
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
 
         h2 {
-            font-size: 1.5em;
-            margin: 10px 0;
+            font-size: 2em; /* Make the text slightly larger */
+            margin: 20px 0;
         }
 
         .button-grid {
@@ -59,7 +62,7 @@
             width: 80px;
             height: 80px;
             margin-bottom: 10px;
-            object-fit: contain; /* Ensures uniform image scaling */
+            object-fit: contain;
         }
 
         .button:hover {
@@ -84,9 +87,10 @@
 </head>
 <body>
     <header>
-        <h1>VAssist</h1>
-        <h2>Helping veterans file claims with the VA!</h2>
+        <img src="VASSIST.jpg" alt="VAssist Logo">
     </header>
+
+    <h2>Helping veterans file claims with the VA!</h2>
 
     <div class="button-grid">
         <a class="button" href="File a Claim.html">
