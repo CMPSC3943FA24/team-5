@@ -46,19 +46,27 @@
             text-decoration: none;
             text-align: center;
             border-radius: 8px;
-            transition: background-color 0.6s, color 0.6s, font-size 0.6s; /* Added font-size transition */
+            transition: background-color 0.6s, color 0.6s, font-size 0.6s;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             font-size: 1.2em;
-            height: 100px;
+            height: 180px;
+        }
+
+        .button img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            object-fit: contain; /* Ensures uniform image scaling */
         }
 
         .button:hover {
-            background-color: white; /* Inverse to white */
-            color: #00509E; /* Inverse to button color */
-            font-size: 1.4em; /* Enlarge text on hover */
-             box-shadow: 0 0 15px red; /* Add red glow on hover */
+            background-color: white;
+            color: #00509E;
+            font-size: 1.4em;
+            box-shadow: 0 0 15px red;
         }
 
         @media screen and (max-width: 768px) {
@@ -81,21 +89,66 @@
     </header>
 
     <div class="button-grid">
-        <a class="button" href="File a Claim.html">File a Claim</a>
-        <a class="button" href="Filing VA Form 21-526EZ.html">Filing VA Form 21-526EZ</a>
-        <a class="button" href="5 Major Claims Codes Simplified.html">5 Major Claims Codes</a>
-        <a class="button" href="Documents Required.html">Documents Required</a>
-        <a class="button" href="Filing Separate Claims for Multiple Disabilities.html">Filing Separate Claims for Multiple Disabilities</a>
-        <a class="button" href="Intent to File Form.html">Intent to File Form</a>
-        <a class="button" href="Learn More About 38CFR Codes.html">Learn About 38CFR Codes</a>
-        <a class="button" href="Local Resources.html">Local Resources</a>
-        <a class="button" href="BDD.html">Benefits Delivery at Discharge</a>
-        <a class="button" href="How the 38 CFR Helps With Filing a Claim.html">How the 38 CFR Helps</a>
-        <a class="button" href="Using 38CFR to Strengthen Your VA Appeal.html">Using 38CFR to Strengthen Your Appeal</a>
-        <a class="button" href="Ways to turn in your disability application.html">Ways to Turn in Your Application</a>
-        <a class="button" href="Common Disability Claims and Ratings.html">Common Disability Claims and Ratings</a>
-        <a class="button" href="Adding Secondary Diagnoses to Strengthen Your Appeal.html">Adding Secondary Diagnoses</a>
-        <a class="button" href="Filing a Claim as a Non-Deployed Veteran.html">Filing a Claim as a Non-Deployed Veteran</a>
+        <a class="button" href="File a Claim.html">
+            <img src="claim.jpg" alt="File a Claim">
+            File a Claim
+        </a>
+        <a class="button" href="Filing VA Form 21-526EZ.html">
+            <img src="form.jpg" alt="Filing VA Form 21-526EZ">
+            Filing VA Form 21-526EZ
+        </a>
+        <a class="button" href="5 Major Claims Codes Simplified.html">
+            <img src="5.jpg" alt="5 Major Claims Codes">
+            5 Major Claims Codes
+        </a>
+        <a class="button" href="Documents Required.html">
+            <img src="docs.jpg" alt="Documents Required">
+            Documents Required
+        </a>
+        <a class="button" href="Filing Separate Claims for Multiple Disabilities.html">
+            <img src="disability.jpg" alt="Filing Separate Claims">
+            Filing Separate Claims for Multiple Disabilities
+        </a>
+        <a class="button" href="Intent to File Form.html">
+            <img src="email.jpg" alt="Intent to File Form">
+            Intent to File Form
+        </a>
+        <a class="button" href="Learn More About 38CFR Codes.html">
+            <img src="38cfr.jpg" alt="Learn About 38CFR Codes">
+            Learn About 38CFR Codes
+        </a>
+        <a class="button" href="Local Resources.html">
+            <img src="okla.jpg" alt="Local Resources">
+            Local Resources
+        </a>
+        <a class="button" href="BDD.html">
+            <img src="medical.jpg" alt="Benefits Delivery at Discharge">
+            Benefits Delivery at Discharge
+        </a>
+        <a class="button" href="How the 38 CFR Helps With Filing a Claim.html">
+            <img src="badge.jpg" alt="How the 38 CFR Helps">
+            How the 38 CFR Helps
+        </a>
+        <a class="button" href="Using 38CFR to Strengthen Your VA Appeal.html">
+            <img src="strength.jpg" alt="Using 38CFR to Strengthen Your Appeal">
+            Using 38CFR to Strengthen Your Appeal
+        </a>
+        <a class="button" href="Ways to turn in your disability application.html">
+            <img src="helmet.jpg" alt="Ways to Turn in Your Application">
+            Ways to Turn in Your Application
+        </a>
+        <a class="button" href="Common Disability Claims and Ratings.html">
+            <img src="calc.jpg" alt="Common Disability Claims and Ratings">
+            Common Disability Claims and Ratings
+        </a>
+        <a class="button" href="Adding Secondary Diagnoses to Strengthen Your Appeal.html">
+            <img src="appeal.jpg" alt="Adding Secondary Diagnoses">
+            Adding Secondary Diagnoses
+        </a>
+        <a class="button" href="Filing a Claim as a Non-Deployed Veteran.html">
+            <img src="home.jpg" alt="Filing a Claim as a Non-Deployed Veteran">
+            Filing a Claim as a Non-Deployed Veteran
+        </a>
     </div>
 
 </body>
