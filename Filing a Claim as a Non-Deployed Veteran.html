@@ -20,11 +20,30 @@
             color: white;
             text-align: center;
             padding: 20px;
+            position: relative; /* Positioning for the button */
         }
 
         h1 {
             margin: 0;
             font-size: 2.5em;
+        }
+
+        /* Back button with rounded corners and silver border */
+        .back-button {
+            position: absolute;
+            top: 110px; /* Position the button below the header */
+            left: 10px;
+            border-radius: 10px; /* Rounded corners */
+            border: 3px solid silver; /* Silver border */
+            padding: 5px;
+        }
+
+        .back-button img {
+            width: 200px; /* Slightly larger button */
+            height: auto; /* Maintain the 16:9 aspect ratio */
+            aspect-ratio: 16/9;
+            cursor: pointer;
+            border-radius: 10px; /* Rounded corners for the image too */
         }
 
         main {
@@ -77,6 +96,11 @@
     <header>
         <h1>Filing a Claim as a Non-Deployed Veteran</h1>
     </header>
+
+    <!-- Back button placed below the banner with rounded corners and silver border -->
+    <a href="index.html" class="back-button">
+        <img src="back.jpg" alt="Back to Main Page">
+    </a>
 
     <main>
         <h2>Can You File a Claim if You Were Never Deployed?</h2>
