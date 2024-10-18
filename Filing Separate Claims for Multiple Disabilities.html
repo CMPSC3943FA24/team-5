@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,12 +14,22 @@
             color: #333;
         }
 
-        header {
-            background-color: #004080;
-            color: #fff;
-            text-align: center;
-            padding: 25px 0; /* Increased padding */
-            font-size: 2.7em; /* Slightly larger header text */
+        /* Back button with rounded corners and silver border */
+        .back-button {
+            position: absolute;
+            top: 110px; /* Position the button below the header */
+            left: 10px;
+            border-radius: 10px; /* Rounded corners */
+            border: 3px solid silver; /* Silver border */
+            padding: 5px;
+        }
+
+        .back-button img {
+            width: 200px; /* Slightly larger button */
+            height: auto; /* Maintain the 16:9 aspect ratio */
+            aspect-ratio: 16/9;
+            cursor: pointer;
+            border-radius: 10px; /* Rounded corners for the image too */
         }
 
         .container {
@@ -105,9 +115,10 @@
 </head>
 <body>
 
-    <header>
-        Filing Separate Claims for Multiple Disabilities
-    </header>
+    <!-- Back button code -->
+    <a href="index.html" class="back-button">
+        <img src="back.jpg" alt="Back to Main Page">
+    </a>
 
     <div class="container">
         <div class="intro">
