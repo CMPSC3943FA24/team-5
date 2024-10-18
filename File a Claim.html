@@ -18,11 +18,30 @@
             padding: 15px;
             text-align: center;
             color: white;
+            position: relative;
         }
 
         header h1 {
             margin: 0;
             font-size: 3em; 
+        }
+
+        /* Back button with rounded corners and silver border */
+        .back-button {
+            position: absolute;
+            top: 110px; /* Lowered the button */
+            left: 10px;
+            border-radius: 10px; /* Rounded corners */
+            border: 3px solid silver; /* Silver border */
+            padding: 5px;
+        }
+
+        .back-button img {
+            width: 200px;  /* Slightly larger button */
+            height: auto;  /* Maintain the 16:9 aspect ratio */
+            aspect-ratio: 16/9;
+            cursor: pointer;
+            border-radius: 10px; /* Rounded corners for the image too */
         }
 
         nav {
@@ -136,6 +155,11 @@
         <h1>VA Assistance for Filing Claims</h1>
     </header>
 
+    <!-- Back button placed below the banner with rounded corners and silver border -->
+    <a href="index.html" class="back-button">
+        <img src="back.jpg" alt="Back to Main Page">
+    </a>
+
     <nav>
         <a href="#start-claim">Start Your Claim</a>
         <a href="#forms-resources">Forms & Resources</a>
@@ -188,7 +212,6 @@
     </main>
 
     <footer>
-        
     </footer>
 
 </body>
