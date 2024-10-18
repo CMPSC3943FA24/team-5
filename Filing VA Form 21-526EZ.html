@@ -20,8 +20,9 @@
             background-color: #004080; /* Header background color */
             color: #fff; /* White text color */
             text-align: center; /* Centered text */
-            padding: 15px 0; /* Reduced padding for header */
-            font-size: 2em; /* Reduced header font size */
+            padding: 20px 0; /* Increased padding for header */
+            font-size: 2.5em; /* Increased header font size */
+            position: relative; /* Positioning for the button */
         }
 
         h2 {
@@ -69,6 +70,24 @@
             text-decoration: underline; /* Underline on hover */
         }
 
+        /* Back button with rounded corners and silver border */
+        .back-button {
+            position: absolute;
+            top: 110px; /* Position the button below the header */
+            left: 10px;
+            border-radius: 10px; /* Rounded corners */
+            border: 3px solid silver; /* Silver border */
+            padding: 5px;
+        }
+
+        .back-button img {
+            width: 200px; /* Slightly larger button */
+            height: auto; /* Maintain the 16:9 aspect ratio */
+            aspect-ratio: 16/9;
+            cursor: pointer;
+            border-radius: 10px; /* Rounded corners for the image too */
+        }
+
         footer {
             text-align: center;
             background-color: #004080; /* Footer background */
@@ -85,6 +104,11 @@
     <header>
         Filing VA Form 21-526EZ
     </header>
+
+    <!-- Back button placed below the banner with rounded corners and silver border -->
+    <a href="index.html" class="back-button">
+        <img src="back.jpg" alt="Back to Main Page">
+    </a>
 
     <div class="container">
         <div class="intro">
