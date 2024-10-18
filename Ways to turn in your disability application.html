@@ -14,6 +14,24 @@
             text-align: center;
         }
 
+        /* Back button with rounded corners and silver border */
+        .back-button {
+            position: absolute;
+            top: 110px; /* Position the button below the header */
+            left: 10px;
+            border-radius: 10px; /* Rounded corners */
+            border: 3px solid silver; /* Silver border */
+            padding: 5px;
+        }
+
+        .back-button img {
+            width: 200px; /* Slightly larger button */
+            height: auto; /* Maintain the 16:9 aspect ratio */
+            aspect-ratio: 16/9;
+            cursor: pointer;
+            border-radius: 10px; /* Rounded corners for the image too */
+        }
+
         section {
             background-color: #f9f9f9; /* Keep section background as it is */
             border: 1px solid #ddd;
@@ -100,6 +118,11 @@
     </style>
 </head>
 <body>
+
+    <!-- Back button -->
+    <a href="index.html" class="back-button">
+        <img src="back.jpg" alt="Back to Main Page">
+    </a>
 
     <section id="How to turn in your disability application">
         <p>
