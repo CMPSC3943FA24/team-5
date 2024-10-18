@@ -1,203 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VA Disability Compensation Estimate Calculator</title>
+    <title>Secondary Diagnoses for Appeals</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #000000; /* Changed background to black */
+            line-height: 1.5; /* Adjusted line height for more compact spacing */
+            background-color: #000000; /* Black background */
             margin: 0;
             padding: 20px;
-            text-align: center;
+            font-size: 1.2em; /* Font size for body text */
+            color: #ffffff; /* White text for body */
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            text-align: center; /* Center all text */
         }
 
+        /* Back button with rounded corners and silver border */
+        .back-button {
+            position: absolute;
+            top: 110px; /* Position the button below the header */
+            left: 10px;
+            border-radius: 10px; /* Rounded corners */
+            border: 3px solid silver; /* Silver border */
+            padding: 5px;
+        }
+
+        .back-button img {
+            width: 200px; /* Slightly larger button */
+            height: auto; /* Maintain the 16:9 aspect ratio */
+            aspect-ratio: 16/9;
+            cursor: pointer;
+            border-radius: 10px; /* Rounded corners for the image too */
+        }
+
+        /* Adjusted width for container */
         .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 50%; /* Reduced width of container to 50% */
+            margin-top: 150px; /* Adjusted to avoid overlapping the button */
         }
 
         h1 {
-            color: #004080;
-            font-size: 2.5em;
+            color: #0066cc; /* Same shade as buttons */
+            font-size: 2.5em; /* Increased title size */
+            margin-bottom: 10px; /* Adjusted margin below title */
         }
 
         h2 {
-            font-size: 2em;
-            color: #003366;
-            margin-top: 30px;
+            color: #0066cc; /* Same shade as buttons */
+            font-size: 2em; /* Increased section heading size */
+            margin-top: 20px; /* Reduced margin above section headings */
         }
 
-        p.notice {
-            font-size: 1.2em;
-            color: #ff0000;
-            margin-bottom: 20px;
+        h3 {
+            color: #0066cc; /* Same shade as buttons */
+            font-size: 1.5em; /* Increased subheading size */
         }
 
-        select,
-        input {
-            width: 100%;
-            padding: 15px; /* Larger input field */
-            margin: 15px 0;
-            border: 1px solid #ddd;
+        .section {
+            background-color: #ffffff; /* White background for text boxes */
+            color: #000000; /* Black text */
+            padding: 10px 15px; /* Adjusted padding for tighter spacing */
+            margin: 10px 0; /* Reduced top margin for text boxes */
             border-radius: 5px;
-            font-size: 1.3em; /* Larger font */
+            font-size: 1.2em; /* Font size for section text */
         }
 
-        button {
-            background-color: #004080;
-            color: white;
-            padding: 15px 20px;
-            font-size: 1.5em; /* Larger button */
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        .section p {
+            margin: 5px 0; /* Reduced paragraph margin */
         }
 
-        button:hover {
-            background-color: #003366;
+        .section .break {
+            margin: 10px 0; /* Line break margin */
         }
 
-        .result {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #e0f7fa;
-            border-radius: 8px;
-            font-size: 1em;
+        a {
+            color: #0066cc; /* Same shade as buttons */
+            text-decoration: none;
         }
 
-        .info-section {
-            text-align: left;
-            margin-bottom: 30px;
-            padding: 20px;
-            background-color: #d9edf7; /* Light blue background */
-            border-radius: 8px;
-        }
-
-        .info-section h2 {
-            font-size: 2.2em;
-            color: #00509E; /* Darker blue for headings */
-        }
-
-        .info-section p {
-            font-size: 1.4em;
-            line-height: 1.6;
-            color: #333;
-            margin: 15px 0;
-        }
-
-        .info-section p strong {
-            font-weight: bold;
-            color: #004080; /* Emphasized text color */
-        }
-
-        .info-section div {
-            margin: 10px 0;
-            font-size: 1.5em;
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
-
 <body>
 
-    <!-- Common Disability Claims Section -->
-    <div class="info-section">
-        <h2>Common Disability Claims and Ratings</h2>
-        <div>
-            <strong>Tinnitus:</strong> Typically rated at 10% disability. Estimated monthly compensation: $171.23.
-        </div>
-        <div>
-            <strong>Limitation of Flexion (Knee):</strong> Can be rated between 0% to 100% depending on severity.
-        </div>
-        <div>
-            <strong>Hearing Loss:</strong> Compensation depends on severity, typically ranging from 0% to 100% disability.
-        </div>
-        <div>
-            <strong>PTSD:</strong> Rated from 0% to 100%, based on the severity of symptoms.
-        </div>
-        <div>
-            <strong>Lumbosacral/Cervical Strain:</strong> Ranges between 0% and 100% based on impact on daily activities.
-        </div>
-    </div>
+    <!-- Back button -->
+    <a href="index.html" class="back-button">
+        <img src="back.jpg" alt="Back to Main Page">
+    </a>
 
-    <!-- Calculator Section -->
     <div class="container">
-        <h1>VA Disability Compensation Estimate Calculator</h1>
-        <p>Select your condition, disability rating, and dependent status to get an estimate of your monthly compensation.</p>
-        <p class="notice"><strong>Note:</strong> This calculator provides an estimate based on typical VA compensation rates. Actual compensation may vary depending on individual circumstances and official VA assessments.</p>
+        <h1>Adding Secondary Diagnoses to Strengthen Your Appeal</h1>
+        <p>When filing an appeal, adding secondary diagnoses that are linked to your primary conditions can help strengthen your case. Below are the five most common primary conditions and their related secondary diagnoses, which can be added to your claim.</p>
 
-        <label for="claim-type">Select Your Claim Type</label>
-        <select id="claim-type">
-            <option value="tinnitus">Tinnitus (10% fixed)</option>
-            <option value="limitation-knee">Limitation of Flexion (Knee)</option>
-            <option value="hearing-loss">Hearing Loss</option>
-            <option value="ptsd">Post-Traumatic Stress Disorder (PTSD)</option>
-            <option value="lumbosacral-strain">Lumbosacral or Cervical Strain</option>
-        </select>
+        <!-- Secondary Diagnoses for Tinnitus -->
+        <div class="section">
+            <h2>Tinnitus</h2>
+            <p>Tinnitus is often rated at 10% but can be linked to other conditions to enhance your appeal. Consider these secondary diagnoses:</p>
+            <div class="break"></div>
+            <p><strong>Anxiety:</strong> Many veterans with tinnitus experience anxiety as a secondary condition, which can be claimed alongside the primary condition.</p>
+            <p><strong>Depression:</strong> Mental health conditions such as depression may arise due to long-term hearing problems caused by tinnitus.</p>
+            <p><strong>Sleep Disorders:</strong> Veterans may struggle with sleep due to constant ringing in the ears, which can be claimed as a secondary diagnosis.</p>
+        </div>
 
-        <label for="disability-rating">Disability Rating</label>
-        <select id="disability-rating">
-            <option value="10">10%</option>
-            <option value="30">30%</option>
-            <option value="40">40%</option>
-            <option value="50">50%</option>
-            <option value="60">60%</option>
-            <option value="70">70%</option>
-            <option value="80">80%</option>
-            <option value="90">90%</option>
-            <option value="100">100%</option>
-        </select>
+        <!-- Secondary Diagnoses for Limitation of Flexion (Knee) -->
+        <div class="section">
+            <h2>Limitation of Flexion (Knee)</h2>
+            <p>Veterans with knee injuries may experience the following secondary conditions:</p>
+            <div class="break"></div>
+            <p><strong>Hip Pain:</strong> Chronic knee issues can lead to overcompensation in the hip, resulting in pain or dysfunction.</p>
+            <p><strong>Lower Back Pain:</strong> Knee injuries can contribute to imbalances that lead to chronic lower back pain.</p>
+            <p><strong>Depression:</strong> Limited mobility can result in depression due to a reduced quality of life.</p>
+        </div>
 
-        <label for="dependents">Dependent Status</label>
-        <select id="dependents">
-            <option value="0">Veteran alone (no dependents)</option>
-            <option value="1">Veteran with spouse (no children)</option>
-            <option value="2">Veteran with spouse and 1 child</option>
-            <option value="3">Veteran with spouse and 2 children</option>
-        </select>
+        <!-- Secondary Diagnoses for Hearing Loss -->
+        <div class="section">
+            <h2>Hearing Loss</h2>
+            <p>Veterans experiencing hearing loss can also file for these related conditions:</p>
+            <div class="break"></div>
+            <p><strong>Balance Issues (Vertigo):</strong> Hearing loss, particularly inner ear damage, can cause balance problems.</p>
+            <p><strong>Tinnitus:</strong> Often, hearing loss and tinnitus go hand in hand. If not initially claimed together, tinnitus can be added as a secondary condition.</p>
+            <p><strong>Depression:</strong> Hearing loss may lead to social isolation and contribute to depression.</p>
+        </div>
 
-        <button onclick="calculateCompensation()">Calculate</button>
+        <!-- Secondary Diagnoses for Post-Traumatic Stress Disorder (PTSD) -->
+        <div class="section">
+            <h2>Post-Traumatic Stress Disorder (PTSD)</h2>
+            <p>PTSD is often linked to the following secondary diagnoses:</p>
+            <div class="break"></div>
+            <p><strong>Substance Abuse:</strong> Veterans with PTSD may develop substance abuse issues as a coping mechanism.</p>
+            <p><strong>Sleep Apnea:</strong> There is increasing recognition that PTSD may contribute to or exacerbate sleep apnea.</p>
+            <p><strong>Anxiety/Depression:</strong> Mental health conditions like anxiety and depression are often secondary to PTSD.</p>
+        </div>
 
-        <div class="result" id="result"></div>
+        <!-- Secondary Diagnoses for Lumbosacral or Cervical Strain -->
+        <div class="section">
+            <h2>Lumbosacral or Cervical Strain</h2>
+            <p>Back and neck strains often lead to the following secondary conditions:</p>
+            <div class="break"></div>
+            <p><strong>Sciatica:</strong> Lower back issues may lead to sciatica, a condition where nerve pain radiates down the leg.</p>
+            <p><strong>Radiculopathy:</strong> Nerve root compression from spinal strain may result in radiculopathy, causing pain and weakness in the arms or legs.</p>
+            <p><strong>Depression:</strong> Chronic pain from these conditions often results in depression.</p>
+        </div>
     </div>
-
-    <script>
-        const rates = {
-            10: 171.23,
-            30: [524.31, 586.31, 632.31, 686.31],
-            40: [755.28, 838.28, 899.28, 970.28],
-            50: [1075.16, 1179.16, 1262.16, 1345.16],
-            60: [1361.88, 1486.88, 1577.88, 1686.88],
-            70: [1716.28, 1861.28, 1968.28, 2095.28],
-            80: [1995.01, 2161.01, 2283.01, 2427.01],
-            90: [2241.91, 2428.91, 2565.91, 2728.91],
-            100: [3737.85, 3946.25, 4098.87, 4280.77]
-        };
-
-        function calculateCompensation() {
-            const claimType = document.getElementById('claim-type').value;
-            const rating = parseInt(document.getElementById('disability-rating').value);
-            const dependentStatus = parseInt(document.getElementById('dependents').value);
-            let amount;
-
-            // Tinnitus is always rated at 10%, no dependent variations
-            if (claimType === 'tinnitus') {
-                amount = rates[10];
-            } else {
-                // Get the compensation amount based on rating and dependent status
-                amount = rates[rating][dependentStatus];
-            }
-
-            document.getElementById('result').innerHTML = `<h2>Estimated Monthly Compensation: $${amount.toFixed(2)}</h2>`;
-        }
-    </script>
 
 </body>
-
 </html>
