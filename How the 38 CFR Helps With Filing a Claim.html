@@ -7,69 +7,121 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.8;
-            text-align: center;
+            line-height: 1.5; /* Adjusted line height for more compact spacing */
+            background-color: #000000; /* Black background */
+            margin: 0;
+            padding: 20px;
+            font-size: 1.2em; /* Font size for body text */
+            color: #ffffff; /* White text for body */
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            text-align: center; /* Center all text */
         }
-        h1 {
-            color: darkblue;
-            font-size: 40px;
-        }
-        h2 {
-            color: darkblue;
-            font-size: 30px;
-        }
-        p {
-            color: black;
-            font-size: 25px;
-        }
-        .separator {
-            width: 80%;
-            margin: 20px auto;
-            border-top: 3px solid darkblue;
-        }
+
         /* Back button with rounded corners and silver border */
         .back-button {
             position: absolute;
-            top: 20px;
-            left: 20px;
-            border-radius: 10px;
-            border: 3px solid silver;
+            top: 110px; /* Position the button below the header */
+            left: 10px;
+            border-radius: 10px; /* Rounded corners */
+            border: 3px solid silver; /* Silver border */
             padding: 5px;
         }
+
         .back-button img {
-            width: 200px;
-            height: auto;
+            width: 200px; /* Slightly larger button */
+            height: auto; /* Maintain the 16:9 aspect ratio */
+            aspect-ratio: 16/9;
             cursor: pointer;
-            border-radius: 10px; /* Rounded corners for the image */
+            border-radius: 10px; /* Rounded corners for the image too */
+        }
+
+        .container {
+            width: 60%; /* Set width to 60% for narrower boxes */
+        }
+
+        h1 {
+            color: #0066cc; /* Same shade as buttons */
+            font-size: 2.5em; /* Increased title size */
+            margin-bottom: 10px; /* Adjusted margin below title */
+        }
+
+        h2 {
+            color: #0066cc; /* Same shade as buttons */
+            font-size: 2em; /* Increased section heading size */
+            margin-top: 20px; /* Reduced margin above section headings */
+        }
+
+        h3 {
+            color: #0066cc; /* Same shade as buttons */
+            font-size: 1.5em; /* Increased subheading size */
+        }
+
+        .section {
+            background-color: #ffffff; /* White background for text boxes */
+            color: #000000; /* Black text */
+            padding: 10px 15px; /* Adjusted padding for tighter spacing */
+            margin: 10px 0; /* Reduced top margin for text boxes */
+            border-radius: 5px;
+            font-size: 1.2em; /* Font size for section text */
+        }
+
+        .section p {
+            margin: 5px 0; /* Reduced paragraph margin */
+        }
+
+        .section .break {
+            margin: 10px 0; /* Line break margin */
+        }
+
+        a {
+            color: #0066cc; /* Same shade as buttons */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <!-- Back button placed at the top left corner -->
+    <!-- Back button -->
     <a href="index.html" class="back-button">
         <img src="back.jpg" alt="Back to Main Page">
     </a>
 
-    <h1>How the 38 CFR Helps With Filing a Claim</h1>
-    
-    <div class="separator"></div>
-    <p>The 38 CFR (Code of Federal Regulations, Title 38) is crucial for veterans filing disability claims because it contains the legal rules and regulations the VA uses to determine eligibility and benefits for veterans. Here’s how it helps:</p>
-    
-    <div class="separator"></div>
-    <h2>Clarifies Eligibility</h2>
-    <p>It provides detailed definitions of conditions that can qualify for compensation, such as PTSD, hearing loss, and others. This helps veterans understand if their conditions are covered.</p>
-    <h2>Informs Claims</h2>
-    <p>The 38 CFR outlines what specific medical evidence is required for different types of claims. Veterans can use this information to gather appropriate documents and medical records.</p>
-    <h2>Determines Disability Ratings</h2>
-    <p>The regulations explain the criteria for different disability ratings, which affect compensation levels. Veterans can estimate how their symptoms might translate into a percentage of disability.</p>
-    <h2>Guides Appeals</h2>
-    <p>If a claim is denied or veterans believe their rating is too low, the 38 CFR offers guidance on how to file appeals or supplemental claims.</p>
-    <h2>Covers Legal Rights</h2>
-    <p>It ensures veterans understand their legal rights and protections during the filing and review processes.</p>
-   
-    <div class="separator"></div>
-    <p>By understanding the 38 CFR, veterans can file more accurate claims and potentially shorten the wait times for their benefits.</p>
+    <div class="container">
+        <h1>How the 38 CFR Helps With Filing a Claim</h1>
+        <p>The 38 CFR (Code of Federal Regulations, Title 38) is crucial for veterans filing disability claims because it contains the legal rules and regulations the VA uses to determine eligibility and benefits for veterans. Here’s how it helps:</p>
+
+        <div class="section">
+            <h2>Clarifies Eligibility</h2>
+            <p>It provides detailed definitions of conditions that can qualify for compensation, such as PTSD, hearing loss, and others. This helps veterans understand if their conditions are covered.</p>
+        </div>
+
+        <div class="section">
+            <h2>Informs Claims</h2>
+            <p>The 38 CFR outlines what specific medical evidence is required for different types of claims. Veterans can use this information to gather appropriate documents and medical records.</p>
+        </div>
+
+        <div class="section">
+            <h2>Determines Disability Ratings</h2>
+            <p>The regulations explain the criteria for different disability ratings, which affect compensation levels. Veterans can estimate how their symptoms might translate into a percentage of disability.</p>
+        </div>
+
+        <div class="section">
+            <h2>Guides Appeals</h2>
+            <p>If a claim is denied or veterans believe their rating is too low, the 38 CFR offers guidance on how to file appeals or supplemental claims.</p>
+        </div>
+
+        <div class="section">
+            <h2>Covers Legal Rights</h2>
+            <p>It ensures veterans understand their legal rights and protections during the filing and review processes.</p>
+        </div>
+
+        <p>By understanding the 38 CFR, veterans can file more accurate claims and potentially shorten the wait times for their benefits.</p>
+    </div>
+
 </body>
 </html>
