@@ -71,6 +71,18 @@
             cursor: pointer;
             border-radius: 10px;
         }
+
+        /* Fade-in animation for the image */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 2s ease, transform 2s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 
@@ -92,7 +104,17 @@
         <a href="https://www.ecfr.gov/current/title-38" target="_blank">
             Click here to view the full list of 38CFR Codes on the Official Government website
         </a>
+        <div>
+            <img id="thankyou-image" src="thankyou.jpg" alt="Thank You" class="fade-in" style="max-width: 100%; border-radius: 10px; margin-top: 20px;">
+        </div>
     </section>
+
+    <script>
+        window.addEventListener('load', () => {
+            const image = document.getElementById('thankyou-image');
+            image.classList.add('visible');
+        });
+    </script>
 </body>
 
 </html>
