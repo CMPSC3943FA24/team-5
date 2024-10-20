@@ -28,9 +28,30 @@
             margin: 20px auto;
             border-top: 3px solid darkblue;
         }
+        /* Back button with rounded corners and silver border */
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border-radius: 10px;
+            border: 3px solid silver;
+            padding: 5px;
+        }
+        .back-button img {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            border-radius: 10px; /* Rounded corners for the image */
+        }
     </style>
 </head>
 <body>
+
+    <!-- Back button placed at the top left corner -->
+    <a href="index.html" class="back-button">
+        <img src="back.jpg" alt="Back to Main Page">
+    </a>
+
     <h1>How the 38 CFR Helps With Filing a Claim</h1>
     
     <div class="separator"></div>
